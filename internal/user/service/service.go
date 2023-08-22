@@ -64,11 +64,11 @@ func NewService(stor storageService, log loggerX, nc natsClient, cnf Config) Ser
 
 	// Create the app instance with all the decorators applied.
 	userApp := Service{
-		GetUser: common.ApplyQueryDecorators[queries.GetUserQuery](
+		GetUser: common.ApplyQueryDecorators(
 			queries.GetUser(userRepo, playerClient),
 			logger.QueryErrorLogger[queries.GetUserQuery, queries.User](log), // Logs the error if any. So you don't need to care about this in the query handler.
 		),
-		CreateUser: common.ApplyCommandDecorators[commands.CreateUserCommand](
+		CreateUser: common.ApplyCommandDecorators(
 			commands.CreateUser(userRepo, true),
 			logger.CommandErrorLogger[commands.CreateUserCommand](log), // Logs the error if any.
 			events.EventSender[commands.CreateUserCommand](messageBus), // Sends the event to the message bus.

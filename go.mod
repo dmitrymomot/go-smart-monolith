@@ -1,6 +1,6 @@
 module github.com/dmitrymomot/go-smart-monolith
 
-go 1.21.0
+go 1.21
 
 require (
 	github.com/dmitrymomot/go-env v1.0.2

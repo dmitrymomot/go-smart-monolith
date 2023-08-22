@@ -25,3 +25,5 @@ In case you decide to split the application into microservices, you can easily d
 - [Microservices architecture](https://microservices.io/)
 - [Microservices test architecture](https://threedots.tech/post/microservices-test-architecture/)
 - [Increasing Cohesion in Go with Generic Decorators](https://threedots.tech/post/increasing-cohesion-in-go-with-generic-decorators/)
+- [Basic CQRS](https://threedots.tech/post/basic-cqrs-in-go/)
+- [Go Project Layout](https://github.com/golang-standards/project-layout)

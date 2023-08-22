@@ -1,5 +1,10 @@
 # go-smart-monolith
 
+[![License](https://img.shields.io/github/license/dmitrymomot/go-smart-monolith)](https://github.com/dmitrymomot/go-smart-monolith/blob/main/LICENSE)
+[![Tests](https://github.com/dmitrymomot/go-smart-monolith/actions/workflows/tests.yml/badge.svg)](https://github.com/dmitrymomot/go-smart-monolith/actions/workflows/tests.yml)
+[![CodeQL Analysis](https://github.com/dmitrymomot/go-smart-monolith/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/dmitrymomot/go-smart-monolith/actions/workflows/codeql-analysis.yml)
+[![GolangCI Lint](https://github.com/dmitrymomot/go-smart-monolith/actions/workflows/golangci-lint.yml/badge.svg)](https://github.com/dmitrymomot/go-smart-monolith/actions/workflows/golangci-lint.yml)
+
 This is an example of a monolithic application built ready for microservice architecture. 
 Each service is built as a separate package and can be easily extracted into a separate repository.
 
